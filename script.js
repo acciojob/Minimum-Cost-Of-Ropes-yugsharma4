@@ -3,8 +3,7 @@ const input = document.querySelector("input");
 const result = document.getElementById("result");
 const submit = document.getElementById("submitBtn");
 let arr = [];
-
-submit.addEventListener("click", () => {
+const minCost =  () => {
   const values = input.value;
   arr = values.split(",");
   arr = arr.map(num => Number(num));
@@ -36,7 +35,8 @@ submit.addEventListener("click", () => {
 
 	if(arr.length != 0) cost += arr[0] + arr[1];
 	result.textContent = cost;
-});
+}
+
 
 
 
